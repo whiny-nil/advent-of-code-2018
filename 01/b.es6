@@ -19,7 +19,8 @@ const findSolution = (input) => {
   return currentFrequency;
 };
 
-const officialInput = inputHelper.getLines().map( (el) => parseInt(el) );
+const officialInput = inputHelper.getLines(__dirname + '/input')
+                                 .map( (el) => parseInt(el) );
 
 console.log(findSolution([3, 3, 4,-2, -4]), 10)
 console.log(findSolution([-6, 3, 8, 5, -6]), 5)

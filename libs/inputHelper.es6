@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-exports.getLines = () => {
-  const rawInput = fs.readFileSync('inputs', 'utf8');
+exports.getLines = (fileName) => {
+  const rawInput = fs.readFileSync(fileName, 'utf8');
 
   return rawInput.trim().split("\n");
 };

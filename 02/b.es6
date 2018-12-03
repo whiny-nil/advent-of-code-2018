@@ -42,7 +42,7 @@ const testInput = [
   "axcye",
   "wvxyz"
 ];
-const input = inputHelper.getLines();
+const input = inputHelper.getLines(__dirname + '/input');
 
 console.log(findCommon(testInput), "fgij");
 console.log(findCommon(input));

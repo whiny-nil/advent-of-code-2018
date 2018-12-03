@@ -6,7 +6,8 @@ function findSolution(input) {
   return input.reduce(reducer);
 }
 
-const officialInput = inputHelper.getLines().map( (el) => parseInt(el) );
+const officialInput = inputHelper.getLines(__dirname + '/input')
+                                 .map( (el) => parseInt(el) );
 
 console.log(findSolution([1, 1, 1]), 3);
 console.log(findSolution([1, 1, -2]), 0);

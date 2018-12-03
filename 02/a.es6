@@ -39,7 +39,7 @@ const testInput = [
   "abcdee",
   "ababab",
 ];
-const input = inputHelper.getLines();
+const input = inputHelper.getLines(__dirname + '/input');
 
 console.log(findChecksum(testInput), 12);
 console.log(findChecksum(input));
